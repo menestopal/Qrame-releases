@@ -1,107 +1,110 @@
 # Qrame
 
-Two panels for Premiere Pro. This repository holds no source code, only the signed installer packages.
+Premiere Pro için iki panel. Bu depoda kaynak kod yok, yalnızca imzalı kurulum paketleri var.
 
-| Panel | What it does |
+| Panel | Ne yapar |
 |---|---|
-| **Qrame** | Re-cuts the active sequence by timecode and joins what is kept into a new, gap-free sequence. The original timeline is never touched. Three ways in: drop in a finished SRT; let Silence Cut measure the pauses and cut them out; or run the automatic pipeline, which transcribes the audio (locally with Whisper, or with Gladia) and lets a model pick the sections to keep from your prompt. It also places captions on the timeline. |
-| **Qrame Cont** | Bulk MOGRT parameter editing, per-clip subtitle text editing, batch keyframe easing, and framing tools (QZoom, QPan, QStep). |
+| **Qrame** | Aktif sekansı zaman koduna göre yeniden keser ve kalan parçaları boşluksuz, yeni bir sekansta birleştirir. Özgün zaman çizgisine hiç dokunmaz. Üç yolu var: hazır bir SRT bırakmak; Sessizlik Kesme ile duraklamaları ölçüp kesmek; ya da sesi deşifre eden (yerelde Whisper ile ya da Gladia ile) ve tutulacak bölümleri sizin yazdığınız talimata göre bir modele seçtiren Otomatik Kurgu. Altyazıları da zaman çizgisine yerleştirir. |
+| **Qrame Cont** | Toplu MOGRT parametre düzenleme, klip klip altyazı metni düzenleme, toplu keyframe yumuşatma ve kadraj araçları (QZoom, QPan, QStep). |
 
-## Download
+## İndir
 
-**[Qrame_0.1.2_Cont_0.2.1.dmg](https://github.com/menestopal/Qrame-releases/releases/download/qrame-0.1.2-cont-0.2.1/Qrame_0.1.2_Cont_0.2.1.dmg)** — Qrame 0.1.2 and Qrame Cont 0.2.1, with the caption templates.
+**[Qrame_0.1.2_Cont_0.2.1.dmg](https://github.com/menestopal/Qrame-releases/releases/download/qrame-0.1.2-cont-0.2.1/Qrame_0.1.2_Cont_0.2.1.dmg)** — Qrame 0.1.2 ve Qrame Cont 0.2.1, altyazı şablonlarıyla birlikte.
 
-Older versions are on the [Releases](https://github.com/menestopal/Qrame-releases/releases) page. Download only the `.dmg` there;
-GitHub adds the "Source code" archives on its own, and they are not needed for installing.
+Her zaman en son sürüme giden bağlantı: https://github.com/menestopal/Qrame-releases/releases/latest
 
-## Installing Qrame 0.1.2 and Qrame Cont 0.2.1
+Önceki sürümler: [Sürümler](https://github.com/menestopal/Qrame-releases/releases). Sürüm sayfasında yalnızca `.dmg` dosyasını indirin;
+"Source code" arşivlerini GitHub kendiliğinden ekler, kurulum için gerekmez.
 
-Qrame and Qrame Cont are two panels for Premiere Pro. Installing them takes
-about a minute.
+## Qrame 0.1.2 ve Qrame Cont 0.2.1 — Kurulum
 
-Requirements: macOS and Premiere Pro 25.0 or later (tested on 26.3). This
-installer does not run on Windows.
+Qrame ve Qrame Cont, Premiere Pro için iki paneldir. Kurulum bir dakika sürer.
 
-### 1. Open the disk image
+Gereksinimler: macOS ve Premiere Pro 25.0 ya da üstü (26.3'te denendi). Bu
+kurulum Windows'ta çalışmaz.
 
-Double-click `Qrame_0.1.2_Cont_0.2.1.dmg`. A disk called **Qrame 0.1.2 + Cont 0.2.1** opens in Finder:
+### 1. Diski açın
+
+`Qrame_0.1.2_Cont_0.2.1.dmg` dosyasını çift tıklayın. Finder'da **Qrame 0.1.2 + Cont 0.2.1** adlı bir disk
+açılır:
 
 | | |
 |---|---|
-| `Install.command` | The installer. This is the one you run. |
-| `INSTALL.html` | These instructions. |
-| `Qrame_0.1.2.zxp` | The Qrame panel, signed. You don't have to open it yourself. |
-| `QrameCont_0.2.1.zxp` | The Qrame Cont panel, signed. You don't have to open it yourself. |
-| `Templates` | The caption templates (`.mogrt`) the panels are set up for. |
+| `Install.command` | Kurulum. Çalıştıracağınız dosya bu. |
+| `INSTALL.html` | Bu talimatlar. |
+| `Qrame_0.1.2.zxp` | Qrame paneli, imzalı. Elle açmanız gerekmez. |
+| `QrameCont_0.2.1.zxp` | Qrame Cont paneli, imzalı. Elle açmanız gerekmez. |
+| `Templates` | Panellerin hazırlandığı altyazı şablonları (`.mogrt`). |
 
-### 2. Install
+### 2. Kurun
 
-Quit Premiere Pro, then double-click `Install.command`. Terminal opens and
-reports each step.
+Premiere Pro'yu kapatın, sonra `Install.command` dosyasını çift tıklayın.
+Terminal açılır ve her adımı yazar.
 
-The first time, macOS may refuse to open it, saying Apple could not verify it
-or that it comes from an unidentified developer. That is expected: the file
-comes straight from us, not from the App Store. There are two ways past it:
+macOS ilk seferde "Apple doğrulayamadı" ya da "tanımlanamayan geliştirici"
+diyerek dosyayı açmayabilir. Bu beklenen bir durum: dosya App Store'dan değil,
+doğrudan Fokus Plus'tan geliyor. İki yol var:
 
-- Click **Done**. Open **System Settings › Privacy & Security**, scroll down to
-  the line about `Install.command` and click **Open Anyway**. Enter your
-  password, then click **Open**.
-- Or open Terminal (**Applications › Utilities › Terminal**), type `bash `
-  (with a space after it), drag `Install.command` into the Terminal window and
-  press Return.
+- Uyarıda **Bitti**'ye basın. **Sistem Ayarları › Gizlilik ve Güvenlik**'i
+  açın, sayfanın altındaki `Install.command` satırında **Yine de Aç**'a basın.
+  Parolanızı girin, çıkan pencerede **Aç**'a basın.
+- Ya da Terminal'i açın (**Uygulamalar › İzlenceler › Terminal**), `bash `
+  yazın (sonunda bir boşlukla), `Install.command` dosyasını Terminal
+  penceresine sürükleyip bırakın ve Enter'a basın.
 
-The installer writes to these places and nowhere else:
+Kurulum yalnızca şu klasörlere yazar, başka hiçbir yere dokunmaz:
 
 ```
 ~/Library/Application Support/Adobe/CEP/extensions/net.fokusplus.qrame.bundle/       Qrame
 ~/Library/Application Support/Adobe/CEP/extensions/net.fokusplus.qrame.cont.bundle/  Qrame Cont
-~/Library/Application Support/Adobe/Common/Motion Graphics Templates/                the templates
+~/Library/Application Support/Adobe/Common/Motion Graphics Templates/                şablonlar
 ```
 
-The panels are signed, so no developer setting has to be turned on. If another
-copy of a panel is already installed somewhere else, the installer stops
-without changing anything and prints the command that removes that copy.
+Paneller imzalı olduğu için herhangi bir geliştirici ayarını açmanız gerekmez.
+Panellerden birinin başka bir yerde kurulu bir kopyası varsa kurulum hiçbir
+şeyi değiştirmeden durur ve o kopyayı kaldıracak komutu yazar.
 
-When it is done you can eject the disk (the ⏏ next to it in Finder) and delete
-the `.dmg`.
+Kurulum bitince diski çıkarabilirsiniz (Finder'da diskin yanındaki ⏏ işareti)
+ve `.dmg` dosyasını silebilirsiniz.
 
-### 3. Open the panels
+### 3. Panelleri açın
 
-Start Premiere Pro, open a project, and choose **Window › Extensions › Qrame**
-or **Window › Extensions › Qrame Cont**.
+Premiere Pro'yu başlatın, bir proje açın ve **Window › Extensions › Qrame** ya
+da **Window › Extensions › Qrame Cont**'u seçin.
 
-### 4. The caption templates
+### 4. Altyazı şablonları
 
-The templates are now in Premiere's local templates folder, so they show up in
-the **Essential Graphics** panel, and Qrame Cont finds them on its own when it
-edits clips made from them.
+Şablonlar artık Premiere'in yerel şablon klasöründe. Bu yüzden **Essential
+Graphics** panelinde görünürler; Qrame Cont da bu şablonlardan yapılmış
+klipleri düzenlerken onları kendiliğinden bulur.
 
-For captions in Qrame, click the **MOGRT** button in the panel's bottom bar and
-pick a template. The folder is hidden in the file dialog: press **⌘⇧G** and
-paste `~/Library/Application Support/Adobe/Common/Motion Graphics Templates`.
+Qrame'de altyazı için panelin alt çubuğundaki **MOGRT** düğmesine basıp bir
+şablon seçin. Bu klasör dosya penceresinde gizlidir: **⌘⇧G**'ye basın ve
+`~/Library/Application Support/Adobe/Common/Motion Graphics Templates` yolunu
+yapıştırın.
 
-The templates use the **Barlow** font family. If Premiere reports a missing
-font, activate Barlow in Adobe Fonts (included with Creative Cloud) or install
-it from Google Fonts. Both are free.
+Şablonlar **Barlow** yazı tipi ailesini kullanır. Premiere eksik yazı tipi
+uyarısı verirse Barlow'u Adobe Fonts'ta etkinleştirin (Creative Cloud'a dahil)
+ya da Google Fonts'tan kurun. İkisi de ücretsiz.
 
-### 5. Extra setup for the automatic pipeline
+### 5. Otomatik kurgu için ek kurulum
 
-Cutting from a finished SRT and everything in Qrame Cont work right after
-installing. Silence Cut and the automatic pipeline need a few command-line
-tools (ffmpeg and whisper-cpp from Homebrew, and a Whisper model) and, for the
-model that picks the sections to keep, an API key. The **About** section of the
-Qrame panel checks the machine, lists what is missing and gives the command for
-each.
+Hazır bir SRT'den kesmek ve Qrame Cont'taki her şey kurulumdan hemen sonra
+çalışır. **Sessizlik Kesme** (Silence Cut) ve **Otomatik Kurgu** (Automatic
+Build) birkaç komut satırı aracına (Homebrew'dan ffmpeg ve whisper-cpp, bir
+Whisper modeli) ve tutulacak bölümleri seçen model için bir API anahtarına
+ihtiyaç duyar. Qrame panelinin **Hakkında** (About) bölümü makineyi denetler,
+eksikleri listeler ve her biri için komutu verir.
 
-### Updating
+### Güncelleme
 
-Download the newer `.dmg` and run its `Install.command` the same way. It
-replaces the installed panels and templates.
+Yeni `.dmg` dosyasını indirin ve içindeki `Install.command`'ı aynı şekilde
+çalıştırın. Kurulu panellerin ve şablonların yerine geçer.
 
-### If a panel does not appear
+### Panel görünmüyorsa
 
-- If it is listed under **Window › Extensions** but nothing opens, it is usually
-  open off-screen in the saved workspace. Choose **Window › Workspaces › Reset
-  to Saved Layout**.
-- If it is not listed at all, restart Premiere Pro once more. If it is still
-  missing, run `Install.command` again and read what it reports.
+- **Window › Extensions** altında listeleniyor ama açılmıyorsa, genellikle
+  kayıtlı çalışma alanında ekranın dışında açıktır. **Window › Workspaces ›
+  Reset to Saved Layout**'u seçin.
+- Hiç listelenmiyorsa Premiere Pro'yu bir kez daha yeniden başlatın. Hâlâ
+  yoksa `Install.command`'ı yeniden çalıştırın ve ne yazdığını okuyun.
