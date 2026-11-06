@@ -9,14 +9,14 @@ Premiere Pro için iki panel. Bu depoda kaynak kod yok, yalnızca imzalı kurulu
 
 ## İndir
 
-**[Qrame_0.1.2_Cont_0.2.1.dmg](https://github.com/menestopal/Qrame-releases/releases/download/qrame-0.1.2-cont-0.2.1/Qrame_0.1.2_Cont_0.2.1.dmg)** — Qrame 0.1.2 ve Qrame Cont 0.2.1, altyazı şablonlarıyla birlikte.
+**[Qrame_0.1.3_Cont_0.2.2.dmg](https://github.com/menestopal/Qrame-releases/releases/download/qrame-0.1.3-cont-0.2.2/Qrame_0.1.3_Cont_0.2.2.dmg)** — Qrame 0.1.3 ve Qrame Cont 0.2.2, altyazı şablonlarıyla birlikte.
 
 Her zaman en son sürüme giden bağlantı: https://github.com/menestopal/Qrame-releases/releases/latest
 
 Önceki sürümler: [Sürümler](https://github.com/menestopal/Qrame-releases/releases). Sürüm sayfasında yalnızca `.dmg` dosyasını indirin;
 "Source code" arşivlerini GitHub kendiliğinden ekler, kurulum için gerekmez.
 
-## Qrame 0.1.2 ve Qrame Cont 0.2.1 — Kurulum
+## Qrame 0.1.3 ve Qrame Cont 0.2.2 — Kurulum
 
 Qrame ve Qrame Cont, Premiere Pro için iki paneldir. Kurulum bir dakika sürer.
 
@@ -25,15 +25,15 @@ kurulum Windows'ta çalışmaz.
 
 ### 1. Diski açın
 
-`Qrame_0.1.2_Cont_0.2.1.dmg` dosyasını çift tıklayın. Finder'da **Qrame 0.1.2 + Cont 0.2.1** adlı bir disk
+`Qrame_0.1.3_Cont_0.2.2.dmg` dosyasını çift tıklayın. Finder'da **Qrame 0.1.3 + Cont 0.2.2** adlı bir disk
 açılır:
 
 | | |
 |---|---|
 | `Install.command` | Kurulum. Çalıştıracağınız dosya bu. |
 | `INSTALL.html` | Bu talimatlar. |
-| `Qrame_0.1.2.zxp` | Qrame paneli, imzalı. Elle açmanız gerekmez. |
-| `QrameCont_0.2.1.zxp` | Qrame Cont paneli, imzalı. Elle açmanız gerekmez. |
+| `Qrame_0.1.3.zxp` | Qrame paneli, imzalı. Elle açmanız gerekmez. |
+| `QrameCont_0.2.2.zxp` | Qrame Cont paneli, imzalı. Elle açmanız gerekmez. |
 | `Templates` | Panellerin hazırlandığı altyazı şablonları (`.mogrt`). |
 
 ### 2. Kurun
