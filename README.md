@@ -9,7 +9,7 @@ Two panels for Premiere Pro. This repository holds no source code, only the sign
 
 ## Download
 
-No version has been published yet.
+**[Qrame_0.1.2_Cont_0.2.1.dmg](https://github.com/menestopal/Qrame-releases/releases/download/qrame-0.1.2-cont-0.2.1/Qrame_0.1.2_Cont_0.2.1.dmg)** — Qrame 0.1.2 and Qrame Cont 0.2.1, with the caption templates.
 
 Older versions are on the [Releases](https://github.com/menestopal/Qrame-releases/releases) page. Download only the `.dmg` there;
 GitHub adds the "Source code" archives on its own, and they are not needed for installing.
